@@ -117,7 +117,12 @@ nav h1 a {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
-  margin: 0 20px;
+	margin-bottom: 0;
+	text-align: center;
+}
+#option-area {
+	display: flex;
+	justify-content: center;
 }
 .filter-options select {
   background-color: white;
