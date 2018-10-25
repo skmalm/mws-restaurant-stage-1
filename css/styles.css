@@ -315,17 +315,25 @@ nav h1 a {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 	.inside #map-container {
-		height: 570px;
-		width: 40%;
-		/* margin: 20px; */
+		flex-grow: 1;
+		height: 600px;
+		width: 44%;
+		margin-right: 40px;
 	}
 	.inside #map {
 		height: 100%;
 	}
 	.inside #restaurant-container {
 		order: -1;
-		width: 40%;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1460px) {
+	.inside #map-container {
+		height: 700px;
 	}
 }
