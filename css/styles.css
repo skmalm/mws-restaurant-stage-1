@@ -37,7 +37,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #maincontent {
   background-color: #f3f3f3;
-  min-height: 100%;
+  width: 100%;
 }
 #footer {
   background-color: #444;
@@ -99,10 +99,15 @@ nav h1 a {
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
-#map {
+.outside #map-container {
   height: 325px;
   width: 100%;
   background-color: #ccc;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -300,7 +305,29 @@ nav h1 a {
 	#restaurants-list li {
 		max-width: 400px;
 	}
-	#map {
+	.outside #map-container {
 		height: 250px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.inside #maincontent {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.inside #map-container {
+		height: 570px;
+		width: 40%;
+		/* margin: 20px; */
+	}
+	.inside #map {
+		height: 100%;
+	}
+	.inside #restaurant-container {
+		order: -1;
+		width: 40%;
 	}
 }
