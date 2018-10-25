@@ -250,6 +250,9 @@ nav h1 a {
   text-transform: uppercase;
 	width: 80%;
 }
+#restaurant-hours {
+	width: 100%;
+}
 #restaurant-container {
 	text-align: center;
 }
@@ -275,14 +278,10 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
-  display: block;
-  list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
-  width: 85%;
+  border: 2px solid #f3f3f3;
+	list-style-type: none;
+	margin: 20px auto;
+	width: 80%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
