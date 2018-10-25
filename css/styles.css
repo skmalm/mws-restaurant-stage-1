@@ -290,6 +290,10 @@ nav h1 a {
   color: #666;
 }
 
+.name {
+	font-weight: bold;
+}
+
 /* ====================== Responsive ====================== */
 
 @media screen and (max-width: 832px) {
