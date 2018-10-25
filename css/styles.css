@@ -99,7 +99,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 300px;
+  height: 325px;
   width: 100%;
   background-color: #ccc;
 }
@@ -285,6 +285,9 @@ nav h1 a {
 
 @media screen and (max-width: 832px) {
 	#restaurants-list li {
-		max-width: 500px;
+		max-width: 400px;
+	}
+	#map {
+		height: 250px;
 	}
 }
