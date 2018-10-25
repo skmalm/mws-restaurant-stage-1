@@ -262,8 +262,8 @@ nav h1 a {
 	text-align: center;
 }
 #restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
+  /* border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff; */
   width: 100%;
 }
 #reviews-container {
@@ -314,8 +314,6 @@ nav h1 a {
 	.inside #maincontent {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 		flex-wrap: wrap;
 	}
 	.inside #map-container {
