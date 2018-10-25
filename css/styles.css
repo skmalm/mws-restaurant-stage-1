@@ -159,7 +159,7 @@ nav h1 a {
   display: block;
   margin-top: 30px;
   max-width: 100%;
-  min-height: 248px;
+  min-height: 215px;
   min-width: 100%;
 }
 #restaurants-list li h1 {
@@ -187,12 +187,6 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 832px) {
-	#restaurants-list li {
-		max-width: 500px;
-	}
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -285,4 +279,12 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* ====================== Responsive ====================== */
+
+@media screen and (max-width: 832px) {
+	#restaurants-list li {
+		max-width: 500px;
+	}
 }
