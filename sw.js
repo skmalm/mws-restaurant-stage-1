@@ -31,17 +31,3 @@ self.addEventListener('install', function(evt) {
     })
   );
 });
-
-// let cacheID = 'v1';
-//
-// self.addEventListener('install', event => {
-//   event.waitUntil(
-//     caches.open(cacheID).then(cache => {
-//       return cache.addAll([
-//         '/',
-//         '/index.html'
-//       ])
-//       .catch
-//     })
-//   )
-// })
