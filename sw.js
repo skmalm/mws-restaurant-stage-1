@@ -1,6 +1,4 @@
-console.log('SW registered!');
-let cacheID = 'rest-rev-cache-v1';
-
+const cacheID = 'rest-rev-cache';
 const cacheFiles = [
   '/',
   '/index.html',
@@ -22,12 +20,37 @@ const cacheFiles = [
   '/img/10.jpg'
 ];
 
+// On SW install, save cacheFiles to cache
 self.addEventListener('install', function(evt) {
   evt.waitUntil(
-    caches.open(cacheID).then(function(cache) {
-      return cache.addAll(cacheFiles);
-    }).catch(function(error) {
-      console.log(error);
-    })
+    caches.open(cacheID)
+    .then(cache => cache.addAll(cacheFiles))
+    .catch(logError)
   );
 });
+
+// Serve cached items when possible for fetch events
+self.addEventListener('fetch', function(evt) {
+  evt.respondWith(
+    caches.match(evt.request)
+    .then(function(response) {
+      if (response) return response;
+      else {
+        return fetch(evt.request)
+        .then(function(response) {
+          // Clone response to allow re-use
+          let clone = response.clone();
+          caches.open(cacheID).then(function(cache) {
+            cache.put(evt.request, clone);
+          });
+          return response;
+        })
+        .catch(logError);
+      }
+    }).catch(logError)
+  );
+});
+
+function logError(error) {
+  console.log(error);
+}
