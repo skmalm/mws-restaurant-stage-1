@@ -8,11 +8,12 @@ This is my completed version of the Restaurant Reviews App Stage 1 project for U
 
 Thanks to Udacity for the primary instructional material.
 
-Thanks to Colt Steele for helping me figure out Flexbox use and other CSS styling.
+Thanks to Colt Steele for helping me figure out Flexbox use and other CSS styling. (https://www.udemy.com/the-advanced-web-developer-bootcamp/)
 
-Thanks to Matthew Cranford for help related to making the site accessible.
+Thanks to Matthew Cranford for help related to making the site accessible. (https://matthewcranford.com/)
 
-Thanks to Matthew Cranford and Ryan Waite for help getting the service worker running.
+Thanks to Matthew Cranford and Ryan Waite for help getting the service worker running. (Ryan Waite tutorial: https://youtu.be/dMutLUzVbIA)
+
 
 # Mobile Web Specialist Certification Course
 ---
